@@ -11,7 +11,7 @@ Usage
 =====
 
 The ``ISYController`` object provides methods to get devices and programs. GetDevice and GetProgram return ``ISYDevice`` and
-``ISYProgram`` objects, respectively, and those objects provide methods to tunr devices on/off, run programs, etc.
+``ISYProgram`` objects, respectively, and those objects provide methods to turn devices on/off, run programs, etc.
 
 .. code:: python
 
