@@ -1,5 +1,5 @@
 =====
-pyisy
+simpleisy
 =====
 
 Python library for Universal Devices ISY994 Insteon/ZWave controller hub
@@ -15,7 +15,7 @@ The ``ISYController`` object provides methods to get devices and programs. GetDe
 
 .. code:: python
 
-    from pyisy import ISYController
+    from simpleisy import ISYController
     isy = ISYController("1.2.3.4", "admin", "password")
     dev = isy.GetDevice("Living room lights")
     print dev.GetState()
@@ -29,7 +29,7 @@ You can also use device/program commands more directly if you want by directly c
 
 .. code:: python
 
-    from pyisy import ISYController
+    from simpleisy import ISYController
     isy = ISYController("1.2.3.4", "admin", "password")
     
     # Select a node somehow
