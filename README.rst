@@ -23,7 +23,7 @@ The ``ISYController`` object provides methods to get devices and programs. GetDe
 
 Output::
 
-Off
+    Off
 
 You can also use device/program commands more directly if you want by directly calling ``NodeCommand`` or ``ProgramCommand``
 
