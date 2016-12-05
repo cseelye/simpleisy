@@ -1,6 +1,6 @@
-=====
+=========
 simpleisy
-=====
+=========
 
 Python library for Universal Devices ISY994 Insteon/ZWave controller hub
 
@@ -31,13 +31,11 @@ You can also use device/program commands more directly if you want by directly c
 
     from simpleisy import ISYController
     isy = ISYController("1.2.3.4", "admin", "password")
-    
-    # Select a node somehow
-    nodes = isy.ListAllNodes()
-    for node in nodes:
-        if node["name"] == "Living room lights":
-            break
+
+    node_address = "1A 2B 3C"
 
     # Turn on the device
-    isy.NodeCommand(node["address"], "DON")
+    isy.NodeCommand(node_address, "DON")
 
+    # Turn off the device
+    isy.NodeCommand(node_address, "DOF")
